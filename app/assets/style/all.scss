@@ -2,5 +2,11 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap");
 
-@import './layout/index.scss'
+@import "base";
+@import "component";
+@import "utilities";
+
+@import './layout/layout.scss';
+@import './layout/index.scss';

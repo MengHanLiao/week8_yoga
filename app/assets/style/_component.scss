@@ -1,0 +1,78 @@
+ //hover
+ .hover-border{
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer; 
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+    &-start{
+        &::before{
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: #ffffff;
+        width: 4px;
+        height: 100%;
+        transition-property: transform;
+        transform: translateX(4px);
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        }
+        &:hover::before{
+            transform: translateX(0);
+            z-index: 1;
+        }
+    }
+    &-bottom{    
+        &::before{
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #907A7B;
+            height: 4px;
+            transition-property: transform;
+            transform: translateY(4px);
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+        }
+        &:hover::before{
+            transform: translateY(0);
+            z-index: 1;
+        }
+    }
+ }
+ .swiper{
+    width: 100%;
+    height: 100%;
+    &-slide{
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    &-img{
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+.rocommandSwiper .swiper{
+    &-slide{
+        width: 100%;
+    }
+}

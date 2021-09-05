@@ -1,0 +1,89 @@
+//background
+.banner{
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
+  height: 582px;
+}
+.advantage__1{
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1593810450967-f9c42742e326.jpeg?raw=true");
+}
+.advantage__2{
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1593810451137-5dc55105dace.jpeg?raw=true");
+}
+.advantage__3{
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1599901860904-17e6ed7083a0.jpeg?raw=true");
+}
+.advantage__1,.advantage__2,.advantage__3{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 420px;
+  @include media-breakpoint-up(md){
+    height: 252px;
+  }
+  @include media-breakpoint-up(lg){
+    height: 420px;
+  }
+}
+
+//picture width & height
+.coachTrain{
+  height: 628px;
+  width: 100%;
+}
+.teacher-pic{
+  width: 48px;
+  height: 48px;
+  @include media-breakpoint-up(md){
+    width: 68px;
+    height: 68px;
+  }
+  &-lg{
+    @include media-breakpoint-up(md){
+      width: 94px;
+      height: 94px;
+    }
+  }
+}
+.space-pic{
+  height: 210px;
+  @include media-breakpoint-up(md){
+    height: 117px;
+  }
+  @include media-breakpoint-up(lg){
+    height: 207px;
+  }
+  &-lg{
+    @include media-breakpoint-up(md){
+      height: 266px;
+    }
+    @include media-breakpoint-up(lg){
+      height: 444px;
+    }
+  }
+}
+.course-pic{
+  height: 165px;
+  @include media-breakpoint-up(md){
+    height: 150px;
+  }
+  @include media-breakpoint-up(lg){
+    height: 445px;
+  }
+}
+.plan-pic{
+  height: 243px;
+}
+.member-pic{
+  width: 60px;
+  height: 60px;
+}
+//margin nevagative
+.ms-lg-n12{
+  @include media-breakpoint-up(lg){
+    margin-left: -96px;
+  }
+}

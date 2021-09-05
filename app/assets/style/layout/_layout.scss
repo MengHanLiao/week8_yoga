@@ -1,0 +1,17 @@
+.hideText{
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.logo-brown{
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA-logo.png?raw=true");
+}
+.logo-white{
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA.png?raw=true");
+}
+.logo-brown,.logo-white{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 96px;
+    height: 31px;
+}

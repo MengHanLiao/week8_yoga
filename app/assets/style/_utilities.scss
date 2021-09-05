@@ -1,0 +1,46 @@
+.placeholder{
+    &-secondary{
+        &::placeholder{
+            color: #907A7B;
+        }
+    }
+    &-camel{
+        &::placeholder{
+            color: #C0A4A5;
+        }
+    }
+}
+.text-shadow{
+    text-shadow: 0.05em 0.08em 2px #000;
+}
+.object-cover{
+    object-fit: cover;
+}
+//rounded
+.rounded{
+    &-md-start{
+        @include media-breakpoint-up(md){
+            border-radius: 1rem 0 0 1rem;
+        }
+    }
+    &-lg-top{
+        @include media-breakpoint-up(lg){
+            border-radius: 1rem 1rem 0 0;
+        }
+    }
+}
+//width
+@include media-breakpoint-up(md){
+    .w-md{
+        &-75{
+            width: 75%;
+        }
+    }
+}
+@include media-breakpoint-up(lg){
+    .w-lg{
+        &-100{
+            width: 100%;
+        }
+    }
+}
